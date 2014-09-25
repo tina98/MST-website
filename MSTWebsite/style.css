@@ -1,0 +1,250 @@
+.html {
+    width: auto;
+    height: 1000px;
+}
+
+.body {
+  position: relative;
+    text-align: center;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  background-color: #ffffff; /*dim the background*/
+    text-align: center;
+}
+
+.overlay img {
+    
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.header .container {
+    color:#a1a1a1;
+    font-family:'Droid Sans', sans-serif;
+    font-size: 1.55em;
+    text-transform:uppercase;
+    word-spacing: 1.7em;
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.carousel {
+    width: 800px;
+    height: 540px;
+    overflow: hidden;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.carousel img {
+    width: 800px;
+    height: 540px;
+    display: none;
+}
+
+.shadow {
+    height: 60px;
+    width: 800px;
+    /*background-image: url("Images/slider-shadow.png");*/
+    background-size: 100%;
+    margin: -30px auto;
+}
+.shadow img {
+    height: 60px;
+    width:800px;
+    display: none;
+}
+.nav{
+    background-color:#ffffff;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1000;
+    text-align: center;
+    max-height: 45px;
+}
+.nav .container {
+    margin: 30px auto 10px auto;
+    text-align: center;
+}
+/*.nav .container li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 20px;
+    background-color: #ffffff;
+}*/
+/*ul {
+    margin:30px auto 0px auto;
+    
+}
+li a {
+    color: #acacac;
+    padding: 0px 30px 0px 0px;
+    border-right: #acacac solid 1px;
+}
+li a.first{
+    border-left:#acacac solid 1px;
+    border-right: #acacac solid 1px;
+    padding: 0px 30px 0px 30px;
+}
+li a:hover {
+    color: #e04343;
+    text-decoration: none;
+}
+li a:active {
+    color: #e04343;
+}
+.nav .active a{
+    color:red;
+}*/
+.mst {
+    
+    width 100%;
+    box-shadow: inset 0px 8px 16px #000,
+    inset 0px -5px 10px #000;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background-color: #c1bdbf;
+}
+.cmst {
+    
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.fixedTop {
+    
+    position:fixed; margin: -50px auto; top:0px; width: 100%; box-shadow: 0px 3px 6px #000; 
+}
+.row {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#top-nav {
+    margin: 10px auto 10px auto;
+    left: 0;
+    right: 0;
+    padding: 0;
+    list-style: none;
+    height: 45px;
+    width:960px;
+    position: absolute;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 9px 3px #000,
+        -3px 0px 9px 3px #000;
+    
+}
+
+
+#top-nav li {
+    text-align: center;
+    float: left; 
+    text-transform: uppercase;
+    font: 1.5em  sans-serif;  
+    width: 170px;
+    padding-bottom: 0px;
+}
+#top-nav .4thchild {
+    
+    width:200px
+}
+#top-nav li a {
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    color: #acacac;
+    border-right: 1px solid #acacac; 
+    padding-top: 12px;
+    padding-bottom: 5px;
+    height: 45px;
+}
+#top-nav li:first-child a {
+    border-left: 1px solid #acacac; 
+}
+#top-nav > li a:hover {
+    color: #ffffff;
+    background: #212021;
+    border: 1px solid #212021;
+    height: 45px;
+}
+
+#top-nav li ul {
+    list-style-type: none;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    height: 150px;
+    background-color: #ffffff;
+    display: none;
+    
+}
+#top-nav li ul li {
+    font-size: 13px;
+    padding: .3em;
+    float: none;    
+}
+#top-nav li ul li a { 
+    height: auto !important;
+    border: none !important;
+    padding: 3px;
+}
+#top-nav li ul li a:hover {
+    color: #ffae00;
+    background: transparent;
+    display: block;
+}
+ul#top-nav li#sub:hover ul{
+    display: block;
+}
+#center{
+    margin-left: auto;
+    margin-right: auto;
+}
+#places td {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.contactUs a {
+    color: #6d6d6d;
+    text-transform: capitalize;
+}
+.contactUs a:hover {
+    color: #ffae00;
+    text-decoration: none;
+}
+.overlayMap{
+    height: 505px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+} 
+.overlayMap p {
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    margin: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Website</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src='script.js'></script>
+    </head>
+    <body>
+        <div class='header'>
+    <div class='container'>The Utica Center for Math Science and Technology</div>
+</div>
+<div class='carousel'>
+    <img id="1" src='http://static3.businessinsider.com/image/50edaeccecad04940500000f-1200/british-photographer-tim-flach-created-a-series-called-more-than-human-which-captures-the-emotions-of-wild-creatures-through-intensely-close-shots-including-this-stunning-picture-of-a-tiger-drying-off.jpg' border="0" />
+    <img id="2" src='http://blog.jimdo.com/wp-content/uploads/2014/01/tree-247122.jpg' border="0" />
+    <img id="3" src='http://www.hdwallcloud.com/wp-content/uploads/2013/07/cool-pictures-of-nature-602.jpg' />
+</div>
+<div class='shadow'></div>
+<!--<div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="#">Name</a></li>
+          <li><a href="#">Browse</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>-->
+
+        </div>
+    </body>
+</html>
