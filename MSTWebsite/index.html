@@ -2,19 +2,22 @@
 <html>
     <head>
         <title>MST Website</title>
-        
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <!-- google maps, bootstrap for formatting, and stylesheet-->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'> 
         <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="style.css">
-        
+        <!-- google maps, Jquery, and script page-->
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script src="JQuery.js"></script>
     <script src="jquery-ui.min.js"></script>
         <script src='script.js'></script>
         
     </head>
+    <!-- use data spy to monitior window position for the nav bar -->
     <body data-spy="scroll" data-target=".nav">
+    <!-- top line header-->
         <div class='header'>
+    <!-- overlay for the first 3 seconds-->
         <div class= "overlay">
             <img src='../MSTWebsite/Images/MST%20Logo.jpg'/>    
         </div>
@@ -29,11 +32,15 @@
 <div class='shadow'>
         <img id="w" src="Images/slider-shadow.png"/>
         </div>
+    
+<!-- contact us button at the side of the screen. also one at the bottom -->
         <div class="contactUs" style="border: solid #b2b2b2 1px; position: absolute; text-decoration: none; font-size: 15px; margin-left: 10px; margin-top: 10px; padding: 2px 2px 2px 2px;"><a href="../MSTWebsite/MSTWebsite%20Contact/MSTWebsiteContact.html">C o n t a c t  <span style="color: white;">|</span> U s</a></div>
+<!--navbar-->
 <div class="nav">
       <div class="container">
         <ul id="top-nav">
           <li><a class="first" href="#">UCMST</a></li>
+          <!--pull down tap bar-->
           <li id="sub"><a href="#UCMST">About Us</a>
                 <ul style="box-shadow: 0px 5px 10px #000;">
                     <li><a href="#UCMST">Who We Are</a></li>
@@ -50,6 +57,9 @@
         </ul>
       </div>
     </div>
+    
+    
+<!-- first div for information. the col-md-2 is bootstrap and it organizes the text into a number of coloumbs out of 12-->
 <div class="mst" id="UCMST">
     <div style="color:#7d3db7; font-size:20px; max-width: 1500px; margin:auto;"><h1>UCMST</h1></div>
     <div class="row">
@@ -110,7 +120,7 @@
     </div>
    
     
-        
+<!-- The second main div, used for MST scores---------------------------------------------------->        
 <div class="cmst" id="ContactUs" style= "padding-left:0px;">
         <div style="color:#7d3db7; font-size:20px; max-width: 1500px; margin:0 auto;"><h1>Our Testing Profile</h1></div>
     <div class="container-fluid" style="width: 1200px;">
@@ -170,14 +180,15 @@
         </table>
         </div>
         <div class= "col-md-6">
-        
+       <!--image next to scoring table--> 
         <img src="Images/Testing.jpg"/>
         </div>
             
         </div>
         <div class="col-md-6" style="padding-bottom:5px;">In 2011, over 90% of the AP test candidates from the UCMST scored at or above level 3 on at least one test.</div>
         </div>
-
+        
+<!-- Third main div used for MST valedectorian stats and stats that aren't scores-->
         <div class="mst" id="HonorAndAchievement">
         <div style="color:#7d3db7; font-size:20px; max-width: 1500px; margin:0 auto;"><h1>Honor and Achievement</h1></div>
         <div class="row">
@@ -212,7 +223,11 @@ education. </p>
             
             
         </div>
+        
+<!--This small div is the photo wall. the accomanying java is in java (duh)-->
     <div id="photos_list" style="background-color:#000; border-top: 5px solid #000;"></div>
+    
+<!-- The 4th main div describes the curriculum of MST-->
 <div class="cmst" id="Curriculum">
         <div style="color:#7d3db7; font-size:20px; max-width: 1500px; margin:0 auto;"><h1>Curriculum</h1></div>
         <div class="row">
@@ -285,7 +300,9 @@ Advanced Algebra/Discrete Math</td>
         </div>
     
         </div>
+<!--This is where the google maps begins-------------------------------------------->
     <div class="mst" id="WhereWeveGone" style="padding: 0px 0 0px 0; overflow: auto;">
+<!--This is the overlay for the map that makes it unclickable-->
         <div class="overlayMap"><p>Click to Interact</p></div>
         <div style="color:#7d3db7; font-size:20px; width: 500px; margin: 5px auto 5px 50px"><h1>Collegiate Map</h1></div>
         
@@ -293,6 +310,7 @@ Advanced Algebra/Discrete Math</td>
         <div class="inline" style="width:100%; margin-top: -70px; height: 505px;"id="map_canvas">
         </div>
         </div>
+<!--This is where the table for the colleges begins--------------------------->
     <div class="cmst" style="overflow: auto; padding-left: 0px;">
         <div style="color:#7d3db7; font-size:20px; width: 500px; position: relative; margin: 5px auto 5px 50px"><h1>Where Our Students Have Gone</h1></div>
         
@@ -410,6 +428,7 @@ Advanced Algebra/Discrete Math</td>
             </table>
             
           </div>
+<!--This is that other contact Us button/link-->
     <div class="contactUs" style="border: solid #b2b2b2 1px; position: absolute; text-decoration: none; font-size: 15px; margin-left: 10px; margin-top: -40px; padding: 2px 2px 2px 2px;"><a href="MSTWebsite%20Contact/MSTWebsiteContact.html">C o n t a c t  <span style="color: white;">|</span> U s</a></div>
   
     </body>
