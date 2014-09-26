@@ -1,14 +1,17 @@
+/*this is for the overlay to disappear*/
 var main = function() {
     $('.overlay').delay(2000).fadeOut();
 };
 $(document).ready(main);
 
+/*this is for the overlay of the map*/
 $(document).ready(function mapActivate() {
     $('.overlayMap').click(function() {
         $('.overlayMap').fadeOut();
     });
     
 });
+/*this is for the carousel*/
 $(document).ready(function Slider() {
     "use strict";
     $('.carousel #1, .shadow #w').fadeIn(500, "swing");
@@ -32,6 +35,7 @@ $(document).ready(function Slider() {
         }
     }, 6500);
 });
+/*this is for the navbar to stick to the top*/
 $(document).ready(function Sticky() {
     "use strict";
     var nav = $('.nav');
@@ -51,7 +55,7 @@ $(document).ready(function Sticky() {
     });
 });
 
-
+/*the google maps*/
 
 function initialize() {
         var map_canvas = document.getElementById('map_canvas');
@@ -61,7 +65,7 @@ function initialize() {
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(map_canvas, map_options);
-    
+    /*all the location's coordinates. if you can figure out how to make a description appear with a click, that would be great*/
         var locations = [];
         locations.push ( {name: "Arizona State", latlng: new google.maps.LatLng(33.42424,-111.928053)});
         locations.push ( {name: "Barry University", latlng: new google.maps.LatLng(25.879072,-80.196161)});
@@ -129,12 +133,12 @@ locations.push ( {name: "Carleton", latlng: new google.maps.LatLng(45.387581 , -
     locations.push ( {name: "U of Michigan", latlng: new google.maps.LatLng(42.278044 , -83.738224)});
     locations.push ( {name: "Wayne State University", latlng: new google.maps.LatLng(42.359139 , -83.066546)});
     
-    
+    /*this makes the baloon generator look for each place and add it to the map*/
         for(var i=0; i< locations.length; i++) {
             var marker = new google.maps.Marker({position: locations[i].latlng, map:map, title:locations[i].name});
         }
     
-
+/*this is me trying to make a description with a click, it failed miserably and is used for nothing*/
 google.maps.event.addListener(marker, 'click', function() {
   infowindow.open(map,marker);
   });
@@ -152,15 +156,10 @@ google.maps.event.addListener(marker, 'click', function() {
     });*/
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-
+/* this is the photowall code for resizing*/
 $(document).ready(function() {
 	function getPhotos(oContainer, container_width, margin, row_height, offset) {
-/*		$.ajax({
-			type: "POST",
-			url: "http://evrika.zavada.com.ua/ajax.php",
-			data: "action=getPhotos&offset="+offset,
-			success: function(result){
-*/
+		/*this is all the pictures in a really long list*/
       result = '[{"id":"3184","image":"../MSTWebsite/Images/60869_119457258108380_100001323205345_113375_98915_n.jpg","width":"300","height":"400"},{"id":"3183","image":"../MSTWebsite/Images/164549_1791165701878_1321688411_32025584_3063495_n.jpg","width":"400","height":"300"},{"id":"3182","image":"../MSTWebsite/Images/166116_1791166501898_1321688411_32025589_6037661_n.jpg","width":"500","height":"333"},{"id":"3181","image":"../MSTWebsite/Images/DSC04201.jpg","width":"400","height":"300"},{"id":"3180","image":"../MSTWebsite/Images/DSC04331.jpg","width":"400","height":"300"},{"id":"3179","image":"../MSTWebsite/Images/DSC04346.jpg","width":"500","height":"333"},{"id":"3178","image":"../MSTWebsite/Images/IMG_0144.jpg","width":"600","height":"400"},{"id":"3177","image":"../MSTWebsite/Images/IMG_0165.jpg","width":"400","height":"600"},{"id":"3176","image":"../MSTWebsite/Images/IMG_0283.jpg","width":"600","height":"400"},{"id":"3175","image":"../MSTWebsite/Images/IMG_0186.jpg","width":"400","height":"600"},{"id":"3174","image":"../MSTWebsite/Images/IMG_0344.jpg","width":"600","height":"400"},{"id":"3173","image":"../MSTWebsite/Images/IMG_0418.jpg","width":"600","height":"400"},{"id":"3172","image":"../MSTWebsite/Images/IMG_1519.jpg","width":"600","height":"400"},{"id":"3171","image":"../MSTWebsite/Images/IMG_1522.jpg","width":"600","height":"400"},{"id":"3170","image":"../MSTWebsite/Images/IMG_1524.jpg","width":"600","height":"400"},{"id":"3169","image":"../MSTWebsite/Images/IMG_1590.jpg","width":"600","height":"400"},{"id":"3168","image":"../MSTWebsite/Images/IMG_2542.jpg","width":"600","height":"400"},{"id":"3167","image":"../MSTWebsite/Images/IMG_2579.jpg","width":"600","height":"400"},{"id":"3166","image":"../MSTWebsite/Images/IMG_2605.jpg","width":"400","height":"600"},{"id":"3165","image":"../MSTWebsite/Images/IMG_2930.jpg","width":"600","height":"400"},{"id":"3165","image":"../MSTWebsite/Images/LabSeniors13.jpg","width":"400","height":"300"},{"id":"3165","image":"../MSTWebsite/Images/MST%20Rainbow%20Large.jpg","width":"600","height":"400"},{"id":"3165","image":"../MSTWebsite/Images/MST_Pancake.jpg","width":"600","height":"400"}, {"id":"3165","image":"../MSTWebsite/Images/Calculator.jpg","width":"600","height":"400"}]';
               var oResult = $.parseJSON(result);
 				var row_width = 0;
