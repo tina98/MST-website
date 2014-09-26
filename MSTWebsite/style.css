@@ -58,7 +58,6 @@
 .shadow {
     height: 60px;
     width: 800px;
-    /*background-image: url("Images/slider-shadow.png");*/
     background-size: 100%;
     margin: -30px auto;
 }
@@ -80,36 +79,7 @@
     margin: 30px auto 10px auto;
     text-align: center;
 }
-/*.nav .container li{
-    display: inline;
-    margin-right: 30px;
-    font-size: 20px;
-    background-color: #ffffff;
-}*/
-/*ul {
-    margin:30px auto 0px auto;
-    
-}
-li a {
-    color: #acacac;
-    padding: 0px 30px 0px 0px;
-    border-right: #acacac solid 1px;
-}
-li a.first{
-    border-left:#acacac solid 1px;
-    border-right: #acacac solid 1px;
-    padding: 0px 30px 0px 30px;
-}
-li a:hover {
-    color: #e04343;
-    text-decoration: none;
-}
-li a:active {
-    color: #e04343;
-}
-.nav .active a{
-    color:red;
-}*/
+/* the .mst class is for the div with the white background*/
 .mst {
     
     width 100%;
@@ -120,6 +90,7 @@ li a:active {
     padding-bottom: 5px;
     background-color: #c1bdbf;
 }
+/* the .cmst class is for the div with the purplish grey background*/
 .cmst {
     
     width: 100%;
@@ -128,6 +99,7 @@ li a:active {
     padding-left: 5px;
     padding-bottom: 5px;
 }
+/*this is added in java script to the nav bar to make it "sticky"*/
 .fixedTop {
     
     position:fixed; margin: -50px auto; top:0px; width: 100%; box-shadow: 0px 3px 6px #000; 
@@ -162,6 +134,7 @@ li a:active {
     width: 170px;
     padding-bottom: 0px;
 }
+/* this makes that list element wider for the longer title*/
 #top-nav .4thchild {
     
     width:200px
@@ -177,6 +150,7 @@ li a:active {
     padding-bottom: 5px;
     height: 45px;
 }
+/*there would be no left border on the first list without this, every other only has a right*/
 #top-nav li:first-child a {
     border-left: 1px solid #acacac; 
 }
@@ -211,6 +185,7 @@ li a:active {
     background: transparent;
     display: block;
 }
+/*this make the drop down list appear with a hover*/
 ul#top-nav li#sub:hover ul{
     display: block;
 }
@@ -222,6 +197,7 @@ ul#top-nav li#sub:hover ul{
     padding-bottom: 3px;
     padding-top: 3px;
 }
+/*contact us button*/
 .contactUs a {
     color: #6d6d6d;
     text-transform: capitalize;
@@ -238,6 +214,7 @@ ul#top-nav li#sub:hover ul{
     position: absolute;
     text-align: center;
 } 
+/* text on the overlay of the map*/
 .overlayMap p {
     color: #ffffff;
     position: absolute;
