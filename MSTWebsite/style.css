@@ -225,3 +225,12 @@ ul#top-nav li#sub:hover ul{
     left: 0;
     right: 0;
 }
+
+h1{
+    color:#7d3db7; 
+    font-size:20px; 
+    max-width: 1500px; 
+    margin:auto;
+    text-align: center;
+}
+
