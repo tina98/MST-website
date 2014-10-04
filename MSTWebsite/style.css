@@ -7,6 +7,10 @@
   position: relative;
     text-align: center;
 }
+.studentsBody{
+    background-image: url('Images/geometry.png');
+    background-repeat: repeat;
+}
 .overlay{
   position: fixed;
   top: 0;
