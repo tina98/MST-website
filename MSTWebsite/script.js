@@ -9,6 +9,9 @@ $(document).ready(function mapActivate() {
     $('.overlayMap').click(function() {
         $('.overlayMap').fadeOut();
     });
+    $('#map_canvas').mouseleave(function() {
+    	$('.overlayMap').fadeIn();
+    });
     
 });
 /*this is for the carousel*/
